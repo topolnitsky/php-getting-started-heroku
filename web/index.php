@@ -8,8 +8,6 @@
 </head>
 <body>
 
-  hello
-  
   
   <?php if (isset($_GET['submitted'])) { ?>
     <h1>The server had accepted:</h1>
@@ -27,6 +25,12 @@
       <input id="my-radio-yes" name="radio" type="radio" required value="Yes">
       <label for="my-radio-no">radio No: </label>
       <input id="my-radio-no" name="radio" type="radio" required value="No"></p>
+    <select id="my-select" name="myselect" size="2" multiple required>
+<option value="">---------</option>
+<option value="1">Первая</option>
+<option value="2">Вторая</option>
+</select>
+<textarea id="textarea" style="resize: none" placeholder="многострочный текст"></textarea>
     <br>
     <input type="submit" value="Submit">
     <input type="reset" value="Clear">
