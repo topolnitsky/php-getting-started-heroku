@@ -12,8 +12,9 @@
   <?php if (isset($_GET['submitted'])) { ?>
     <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
+  <p>radio: <?php echo htmlspecialchars($_GET['myselect']); ?></p>
   
-  <p>radio: <?php if(isset['myselect']) ?></p>
+  
   
     <p>Try again? <a href="/index.php">Yes!</a></p>
       <?php } ?>
